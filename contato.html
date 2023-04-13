@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="mobile.html">Mobile</a>
+                </li>
+                <li>
+                    <a href="games.html">Games</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Contato</h1>
+    </header>
+    <section>
+        <h2 class="cor">Envie sua mensagem</h2>
+        <p>
+            *Campos obrigatórios
+        </p>
+
+        <form action="index.html" name="contato" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="idNome">* Nome: </label>
+                <input id="idNome" type="text" name="nome" required autofocus><br>
+
+                <label for="idEmail">* E-mail: </label>
+                <input id="idEmail" type="eamil" name="email" required placeholder="nome@email"><br>
+
+                <label for="idSenha">Senha: </label>
+                <input id="idSenha" type="password" name="senha" minlength="8" maxlength="12"><br>
+
+                <label for="idFone">Fone: </label>
+                <input id="idFone" type="tel" name="telefone"><br>
+
+                <label for="idData">Data de Nascimento: </label>
+                <input id="idData" type="date" name="data"><br>
+
+                <label for="idCidade">Cidade: </label>
+                <select name="cidade" id="idCidade">
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="BH">Belo Horizonte</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PA">Porto Alegre</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Busca</legend>
+                <label for="idBusca">Busca:</label>
+                <input id="idBusca" type="search" name="Busca" placeholder="Google"><br>
+
+                <label for="idUrl">URL:</label>
+                <input id="idUrl" type="url" name="url"><br>
+
+                <label for="idQuantidade">Quantidade:</label>
+                <input id="idQuantidade" type="number" name="quantidade" min="2" max="10" step="2"><br>
+
+                <label for="idNota">Nota:</label>
+                <input type="range" name="nota" id="idNota" min="1" max="10"><br>
+
+                <label for="idArquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="idArquivo">
+            </fieldset>
+
+            <fieldset>
+                <legend>Tamanhos</legend>
+                <input type="radio" name="tamanho" id="IdPequeno" value="P">
+                <label for="idPequeno">P</label>
+
+                <input type="radio" name="tamanho" id="idMedio" value="M">
+                <label for="idMedio">M</label>
+
+                <input type="radio" name="tamanho" id="idGrande" value="G">
+                <label for="idGrange">G</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cores</legend>
+                <input type="checkbox" name="cor" id="idVermelho" value="vermelho">           
+                <label for="idVermelho">Vermelho</label>
+
+                <input type="checkbox" name="amarelo" id="idAmarelo" value="amarelo">
+                <label for="idAmarelo">Amarelo</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea name="mensagem" id="idMensagem" cols="50" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" value="Envia">
+            <input type="button" value="Teste">
+            <input type="reset" value="Limpar">
+        </form>
+    </section>
+    <footer>
+        <p>
+            Contato <a href="https://github.com/gabefeitosa" target="_blank">Meu github</a>
+        </p>
+        <p>
+            Autor: Gabriel Feitosa
+        </p>
+    </footer>
+</body>
+
+</html>
